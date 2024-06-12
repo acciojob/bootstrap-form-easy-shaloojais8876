@@ -12,41 +12,52 @@
 	<div class="border p-5">
 	<h2>Internship Form</h2>
 	<form id="application-form">
-		<div class="d-flex justify-content-around ">
+		<div class="d-flex justify-content-between">
 	
-			<label for ="first-name-input" class="form-label">First Name</label>
-			<input type="text" class=" w-25 form-control" id="first-name-input" required>
-			
-	        <label for ="last-name-input" class="form-label">Last Name</label>
-			<input type="text" class="w-25 form-control" id="last-name-input" required>
-
+			  <div class="form-group">
+                <label for="first-name-input">First Name</label>
+                <input type="text" class="form-control" id="first-name-input" required>
+               
+            </div>
+			  <div class="form-group">
+                <label for="last-name-input">First Name</label>
+                <input type="text" class="form-control" id="last-name-input" required>
+            
+            </div>
+			<div class="form-group">
 			<label for ="email-input" class="form-label">Email Address</label>
-			<input type="email" class="w-25 form-control" id="email-input" required>
+			<input type="email" class="form-control" id="email-input" required>
+		</div>
 		</div>
 		<br>
-		<div class="d-flex justify-content-around">
+		<div class="d-flex justify-content-between">
+			<div class="form-group">
 			<label for="college-input" class="form-label">College</label>
-			<input type="text"  class="w-25 form-control"id="college-input" required>
-
-			<select class="w-25 form-select">
+			<input type="text"  class="form-control"id="college-input" required>
+			</div>
+			<div class="form-group">
+				<label for="grad-year-input" class="form-label">Graduation-Year</label>
+			<select class="form-select" id="grad-year-input" required>
 				<option disabled selected hidden>Choose</option>
 				<option>2020</option>
 				<option>2021</option>
 				<option>2022</option>
 				<option>2023</option>
 			</select>
-
+			</div>
+<div class="form-group">
 			<label for ="roll-no-input" class="form-label">Roll No.</label>
-			<input type ="text" class="w-25 form-control" id="roll-no-input" required>
+			<input type ="text" class="form-control" id="roll-no-input" required>
+		</div>
+		</div>
+		<br>
+		<div class="form-group form-check">
+			<input type="checkbox" class="form-check-input" id="conditions-checkbox" required>	
+			 <label for="conditions-checkbox" class="form-check-label">Agree to terms and conditions</label>
 		</div>
 		<br>
 		<div>
-			<input type="checkbox" id="conditions-checkbox" required>	
-			 <label>Agree to terms and conditions</label>
-		</div>
-		<br>
-		<div>
-<button type="submit" class="btn btn-primary">Submit form</button>
+        <button type="submit" class="btn btn-primary">Submit form</button>
 			
 		</div>
 	</div>
